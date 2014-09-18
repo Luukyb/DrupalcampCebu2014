@@ -169,6 +169,9 @@ ul.menu {
     a:hover {
       background: url('../images/register-tab.png') no-repeat;
     }
+    a.active {
+      background: url('../images/register-tab.png') no-repeat;
+    }
   }
 }
 
