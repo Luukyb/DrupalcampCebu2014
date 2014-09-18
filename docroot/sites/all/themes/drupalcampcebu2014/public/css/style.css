@@ -468,7 +468,19 @@ ul.menu li a.active {
   min-height: 220px;
 }
 
-/* line 345, ../sass/partials/_global.scss */
+/* line 346, ../sass/partials/_global.scss */
+.image-widget-data .btn {
+  float: right;
+  position: relative;
+  margin-top: -34px;
+}
+/* line 351, ../sass/partials/_global.scss */
+.image-widget-data .btn.btn-danger {
+  float: none;
+  margin-top: 0;
+}
+
+/* line 357, ../sass/partials/_global.scss */
 .camp-footer {
   background-color: #1d2734;
 }
