@@ -559,6 +559,81 @@ ul.menu li a:hover {
   max-width: 55%;
 }
 
+/* line 90, ../sass/partials/_sponsors.scss */
+.page-sponsors .content {
+  margin-top: 50px;
+}
+/* line 92, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .col-md-12 {
+  margin-bottom: 50px;
+}
+/* line 94, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .col-md-12 h6 {
+  color: #f1c419;
+  font-size: 22px;
+  text-align: center;
+}
+/* line 98, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .col-md-12 h6 a {
+  color: #fff;
+}
+/* line 101, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .col-md-12 h6 a:hover {
+  color: #f1c419;
+  text-decoration: underline;
+}
+/* line 108, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .row p {
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+  margin: 50px 0 20px;
+  font-family: "chinese rocks", sans-serif;
+}
+/* line 120, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .row.gold-sponsors img {
+  margin: 15px auto;
+  display: block;
+  max-width: 305px;
+}
+/* line 127, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .row.silver-sponsors .col-md-3 img {
+  margin: 15px auto;
+  display: block;
+  max-width: 210px;
+}
+/* line 135, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .row.bronze-sponsors .col-md-2 img {
+  margin: 15px auto;
+  display: block;
+  max-width: 140px;
+}
+/* line 142, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .food-sponsors {
+  text-align: center;
+}
+/* line 144, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .food-sponsors img {
+  max-width: 55%;
+}
+/* line 148, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .coffee-sponsors {
+  text-align: center;
+}
+/* line 150, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .coffee-sponsors img {
+  max-width: 55%;
+}
+/* line 154, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .saturday-sponsors {
+  text-align: center;
+  margin-bottom: 75px;
+}
+/* line 157, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .saturday-sponsors img {
+  max-width: 55%;
+}
+
 /*******************************************************************************
  * _footer.scss
  ******************************************************************************/
