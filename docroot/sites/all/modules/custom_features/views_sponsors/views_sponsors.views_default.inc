@@ -354,7 +354,6 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['content'] = '<p>Gold</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['path'] = 'sponsors';
-  $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Sponsors';
   $handler->display->display_options['menu']['description'] = 'The esteemed sponsors that made this event possible.';
   $handler->display->display_options['menu']['weight'] = '4';
