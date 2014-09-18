@@ -9,6 +9,8 @@
     display: block;
     height: 70px;
     margin-top: -85px;
+    z-index: 1;
+    position: relative;
   }
   background: #333;
   padding-top: 25px;
