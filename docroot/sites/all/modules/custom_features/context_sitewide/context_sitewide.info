@@ -11,5 +11,4 @@ features[ctools][] = context:context:3
 features[features_api][] = api:2
 features[menu_custom][] = main-menu
 features[menu_links][] = main-menu_register:user/register
-features[menu_links][] = main-menu_speakers:speakers
-features[menu_links][] = main-menu_sponsors:sponsors
+features_exclude[menu_links][main-menu_home:<front>] = main-menu_home:<front>
