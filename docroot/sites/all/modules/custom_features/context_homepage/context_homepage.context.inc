@@ -38,9 +38,9 @@ function context_homepage_context_default_contexts() {
           'region' => 'grey-region',
           'weight' => '-10',
         ),
-        'user-new' => array(
-          'module' => 'user',
-          'delta' => 'new',
+        'quicktabs-sessions' => array(
+          'module' => 'quicktabs',
+          'delta' => 'sessions',
           'region' => 'blue-region',
           'weight' => '-10',
         ),
