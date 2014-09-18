@@ -32,10 +32,16 @@ function context_homepage_context_default_contexts() {
           'region' => 'map-region',
           'weight' => '-10',
         ),
-        'views-sponsors-block_1' => array(
+        'views-sponsors-gold_block' => array(
           'module' => 'views',
-          'delta' => 'sponsors-block_1',
+          'delta' => 'sponsors-gold_block',
           'region' => 'grey-region',
+          'weight' => '-10',
+        ),
+        'user-new' => array(
+          'module' => 'user',
+          'delta' => 'new',
+          'region' => 'blue-region',
           'weight' => '-10',
         ),
       ),
