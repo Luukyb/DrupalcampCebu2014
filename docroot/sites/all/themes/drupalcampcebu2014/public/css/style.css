@@ -12,11 +12,12 @@
   src: url("../fonts/chinese_rocks/chinese_rocks.woff");
   src: url("../fonts/chinese_rocks/chinese_rocks.ttf") format("truetype"), url("../fonts/chinese_rocks/chinese_rocks.svg") format("svg");
 }
+
 /* line 32, ../sass/partials/_base.scss */
 h1, h2, h3 {
   font-family: "chinese rocks", sans-serif;
   text-align: center;
-  color: #fff;
+  color: white;
   margin-top: 40px;
 }
 
@@ -37,7 +38,7 @@ h4 {
   font-family: "Source Sans Pro", sans-serif;
   font-style: italic;
   font-size: 29px;
-  color: #fff;
+  color: white;
 }
 
 /* line 56, ../sass/partials/_base.scss */
@@ -54,29 +55,41 @@ p {
  * _global.scss
  ******************************************************************************/
 @-webkit-keyframes spin {
+  /* line 6, ../sass/partials/_global.scss */
   from {
     -webkit-transform: rotate(0deg);
   }
+
+  /* line 7, ../sass/partials/_global.scss */
   to {
     -webkit-transform: rotate(360deg);
   }
 }
+
 @-o-keyframes spin {
+  /* line 11, ../sass/partials/_global.scss */
   from {
     -o-transform: rotate(0deg);
   }
+
+  /* line 12, ../sass/partials/_global.scss */
   to {
     -o-transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
+  /* line 16, ../sass/partials/_global.scss */
   from {
     transform: rotate(0deg);
   }
+
+  /* line 17, ../sass/partials/_global.scss */
   to {
     transform: rotate(360deg);
   }
 }
+
 /* line 20, ../sass/partials/_global.scss */
 .navbar-inverse {
   background-color: black;
@@ -236,7 +249,7 @@ ul.menu li div.logo-title-menu-hidden {
 /* line 143, ../sass/partials/_global.scss */
 ul.menu li span.title-1st {
   font-family: "chinese rocks", sans-serif;
-  color: #fff;
+  color: white;
   font-size: 24px;
 }
 /* line 148, ../sass/partials/_global.scss */
@@ -392,7 +405,7 @@ ul.menu li a.active {
   border: none !important;
   background: none !important;
   padding-top: 0;
-  color: #fff;
+  color: white;
   font-family: "chinese rocks", sans-serif;
 }
 /* line 276, ../sass/partials/_global.scss */
@@ -750,4 +763,190 @@ ul.menu li a.active {
 .camp-venue .container .row .col-md-12 h3 {
   margin-top: 20px;
   color: #0076B0;
+}
+
+/*******************************************************************************
+ * _responsive.scss
+ ******************************************************************************/
+@media (max-width: 1200px) and (min-width: 992px) {
+  /* line 6, ../sass/partials/_responsive.scss */
+  .above-the-fold {
+    height: 790px;
+  }
+  /* line 8, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-md-4 {
+    width: 31.333333%;
+  }
+  /* line 11, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-md-5 {
+    width: 42%;
+  }
+  /* line 14, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-md-3 {
+    width: 26%;
+    background-size: 68% 87%;
+    height: 300px;
+  }
+  /* line 19, ../sass/partials/_responsive.scss */
+  .above-the-fold .header-intro-text {
+    margin-bottom: -25px;
+  }
+  /* line 23, ../sass/partials/_responsive.scss */
+  .above-the-fold .logo-container img {
+    width: 90%;
+  }
+  /* line 27, ../sass/partials/_responsive.scss */
+  .above-the-fold .drupalcamp-title span {
+    font-size: 83px !important;
+    line-height: 83px;
+  }
+  /* line 30, ../sass/partials/_responsive.scss */
+  .above-the-fold .drupalcamp-title span.cebu {
+    font-size: 216px !important;
+    line-height: 133px !important;
+  }
+  /* line 37, ../sass/partials/_responsive.scss */
+  .above-the-fold .venue-container span.date {
+    font-size: 28px !important;
+  }
+  /* line 40, ../sass/partials/_responsive.scss */
+  .above-the-fold .venue-container span.uni {
+    font-size: 45px !important;
+    line-height: 40px !important;
+  }
+  /* line 44, ../sass/partials/_responsive.scss */
+  .above-the-fold .venue-container span.uni-name {
+    font-size: 56px !important;
+    line-height: 53px !important;
+  }
+  /* line 48, ../sass/partials/_responsive.scss */
+  .above-the-fold .venue-container span.cebucity {
+    font-size: 70px !important;
+    line-height: 57px !important;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  /* line 58, ../sass/partials/_responsive.scss */
+  .above-the-fold {
+    height: 950px;
+  }
+  /* line 61, ../sass/partials/_responsive.scss */
+  .above-the-fold .logo-container img {
+    width: 95%;
+  }
+  /* line 65, ../sass/partials/_responsive.scss */
+  .above-the-fold .header-intro-text {
+    margin-bottom: -20px;
+  }
+  /* line 68, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-md-3 {
+    height: 100px;
+    background-size: 68% 68%;
+    clear: both;
+    width: 100%;
+  }
+  /* line 73, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-md-3 span {
+    font-size: 35px !important;
+    margin-right: 5px;
+  }
+  /* line 76, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-md-3 span:nth-child(4) {
+    margin-right: 0px;
+  }
+  /* line 81, ../sass/partials/_responsive.scss */
+  .above-the-fold .venue-container {
+    margin-top: 0px !important;
+  }
+  /* line 85, ../sass/partials/_responsive.scss */
+  .above-the-fold ul.menu .logo-title-menu-hidden {
+    float: left;
+    margin-top: -7px;
+  }
+  /* line 90, ../sass/partials/_responsive.scss */
+  .above-the-fold .drupalcamp-title span {
+    font-size: 90px !important;
+  }
+  /* line 92, ../sass/partials/_responsive.scss */
+  .above-the-fold .drupalcamp-title span.cebu {
+    font-size: 245px !important;
+  }
+
+  /* line 99, ../sass/partials/_responsive.scss */
+  .camp-speakers .speaker-info .img-speaker {
+    margin-left: 30%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 108, ../sass/partials/_responsive.scss */
+  .above-the-fold {
+    height: 1561px;
+  }
+  /* line 112, ../sass/partials/_responsive.scss */
+  .above-the-fold .logo-container,
+  .above-the-fold .drupalcamp-title,
+  .above-the-fold .venue-container {
+    width: 360px;
+    display: block;
+    margin: auto;
+  }
+  /* line 117, ../sass/partials/_responsive.scss */
+  .above-the-fold .drupalcamp-title span {
+    font-size: 80px !important;
+  }
+  /* line 119, ../sass/partials/_responsive.scss */
+  .above-the-fold .drupalcamp-title span.cebu {
+    font-size: 205px !important;
+    line-height: 115px;
+  }
+  /* line 125, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-sm-5,
+  .above-the-fold .col-sm-6 {
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+  /* line 130, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-sm-4 {
+    width: 350px;
+    display: block;
+    margin: auto;
+    margin-top: -50px;
+    height: 380px;
+    background-size: 68% 89%;
+  }
+  /* line 139, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-sm-4 .venue-container span.date {
+    font-size: 46px;
+    line-height: 110px;
+  }
+  /* line 143, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-sm-4 .venue-container span.uni {
+    font-size: 68px;
+    line-height: 0px;
+  }
+  /* line 147, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-sm-4 .venue-container span.uni-name {
+    font-size: 80px;
+    line-height: 75px;
+  }
+  /* line 151, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-sm-4 .venue-container span.cebucity {
+    font-size: 98px;
+    line-height: 80px;
+  }
+  /* line 158, ../sass/partials/_responsive.scss */
+  .above-the-fold .header-intro-text {
+    margin: 0 20px;
+  }
+  /* line 162, ../sass/partials/_responsive.scss */
+  .above-the-fold ul.menu .logo-title-menu-hidden {
+    float: left;
+  }
+
+  /* line 168, ../sass/partials/_responsive.scss */
+  .speaker-info .img-speaker {
+    display: block;
+    margin: auto !important;
+  }
 }
