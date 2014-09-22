@@ -163,7 +163,7 @@ ul.menu {
       font-family: $font-logo;
       font-size: 24px;
       padding: 25px;
-            padding-top: 4px;
+      padding-top: 4px;
       padding-left: 10px;
     }
     a:hover {
@@ -183,7 +183,7 @@ ul.menu {
 .camp-speakers {
   h1 {
   font-family: chinese rocks;
-  color: white;
+  color: $logo-color-white;
   font-size: 72px;
   text-align: center;
   }
@@ -342,8 +342,18 @@ ul.menu {
   }
 }
 
+.image-widget-data {
+  .btn {
+    float: right;
+    position: relative;
+    margin-top: -34px;
+  }
+  .btn.btn-danger {
+    float: none;
+    margin-top: 0;
+  }
+}
+
 .camp-footer {
   background-color: #1d2734;
 }
-
-

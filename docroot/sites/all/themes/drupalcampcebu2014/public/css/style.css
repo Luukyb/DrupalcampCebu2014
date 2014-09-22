@@ -286,7 +286,7 @@ ul.menu li a.active {
 /* line 184, ../sass/partials/_global.scss */
 .camp-speakers h1 {
   font-family: chinese rocks;
-  color: white;
+  color: #fff;
   font-size: 72px;
   text-align: center;
 }
@@ -468,7 +468,19 @@ ul.menu li a.active {
   min-height: 220px;
 }
 
-/* line 345, ../sass/partials/_global.scss */
+/* line 346, ../sass/partials/_global.scss */
+.image-widget-data .btn {
+  float: right;
+  position: relative;
+  margin-top: -34px;
+}
+/* line 351, ../sass/partials/_global.scss */
+.image-widget-data .btn.btn-danger {
+  float: none;
+  margin-top: 0;
+}
+
+/* line 357, ../sass/partials/_global.scss */
 .camp-footer {
   background-color: #1d2734;
 }
@@ -560,6 +572,81 @@ ul.menu li a.active {
 }
 /* line 83, ../sass/partials/_sponsors.scss */
 .camp-sponsors .saturday-sponsors img {
+  max-width: 55%;
+}
+
+/* line 90, ../sass/partials/_sponsors.scss */
+.page-sponsors .content {
+  margin-top: 50px;
+}
+/* line 92, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .col-md-12 {
+  margin-bottom: 50px;
+}
+/* line 94, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .col-md-12 h6 {
+  color: #f1c419;
+  font-size: 22px;
+  text-align: center;
+}
+/* line 98, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .col-md-12 h6 a {
+  color: #fff;
+}
+/* line 101, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .col-md-12 h6 a:hover {
+  color: #f1c419;
+  text-decoration: underline;
+}
+/* line 108, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .row p {
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+  margin: 50px 0 20px;
+  font-family: "chinese rocks", sans-serif;
+}
+/* line 120, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .row.gold-sponsors img {
+  margin: 15px auto;
+  display: block;
+  max-width: 305px;
+}
+/* line 127, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .row.silver-sponsors .col-md-3 img {
+  margin: 15px auto;
+  display: block;
+  max-width: 210px;
+}
+/* line 135, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .row.bronze-sponsors .col-md-2 img {
+  margin: 15px auto;
+  display: block;
+  max-width: 140px;
+}
+/* line 142, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .food-sponsors {
+  text-align: center;
+}
+/* line 144, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .food-sponsors img {
+  max-width: 55%;
+}
+/* line 148, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .coffee-sponsors {
+  text-align: center;
+}
+/* line 150, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .coffee-sponsors img {
+  max-width: 55%;
+}
+/* line 154, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .saturday-sponsors {
+  text-align: center;
+  margin-bottom: 75px;
+}
+/* line 157, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .saturday-sponsors img {
   max-width: 55%;
 }
 
@@ -663,4 +750,190 @@ ul.menu li a.active {
 .camp-venue .container .row .col-md-12 h3 {
   margin-top: 20px;
   color: #0076B0;
+}
+
+/*******************************************************************************
+ * _responsive.scss
+ ******************************************************************************/
+@media (max-width: 1200px) and (min-width: 992px) {
+  /* line 6, ../sass/partials/_responsive.scss */
+  .above-the-fold {
+    height: 790px;
+  }
+  /* line 8, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-md-4 {
+    width: 31.333333%;
+  }
+  /* line 11, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-md-5 {
+    width: 42%;
+  }
+  /* line 14, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-md-3 {
+    width: 26%;
+    background-size: 68% 87%;
+    height: 300px;
+  }
+  /* line 19, ../sass/partials/_responsive.scss */
+  .above-the-fold .header-intro-text {
+    margin-bottom: -25px;
+  }
+  /* line 23, ../sass/partials/_responsive.scss */
+  .above-the-fold .logo-container img {
+    width: 90%;
+  }
+  /* line 27, ../sass/partials/_responsive.scss */
+  .above-the-fold .drupalcamp-title span {
+    font-size: 83px !important;
+    line-height: 83px;
+  }
+  /* line 30, ../sass/partials/_responsive.scss */
+  .above-the-fold .drupalcamp-title span.cebu {
+    font-size: 216px !important;
+    line-height: 133px !important;
+  }
+  /* line 37, ../sass/partials/_responsive.scss */
+  .above-the-fold .venue-container span.date {
+    font-size: 28px !important;
+  }
+  /* line 40, ../sass/partials/_responsive.scss */
+  .above-the-fold .venue-container span.uni {
+    font-size: 45px !important;
+    line-height: 40px !important;
+  }
+  /* line 44, ../sass/partials/_responsive.scss */
+  .above-the-fold .venue-container span.uni-name {
+    font-size: 56px !important;
+    line-height: 53px !important;
+  }
+  /* line 48, ../sass/partials/_responsive.scss */
+  .above-the-fold .venue-container span.cebucity {
+    font-size: 70px !important;
+    line-height: 57px !important;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  /* line 58, ../sass/partials/_responsive.scss */
+  .above-the-fold {
+    height: 950px;
+  }
+  /* line 61, ../sass/partials/_responsive.scss */
+  .above-the-fold .logo-container img {
+    width: 95%;
+  }
+  /* line 65, ../sass/partials/_responsive.scss */
+  .above-the-fold .header-intro-text {
+    margin-bottom: -20px;
+  }
+  /* line 68, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-md-3 {
+    height: 100px;
+    background-size: 68% 68%;
+    clear: both;
+    width: 100%;
+  }
+  /* line 73, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-md-3 span {
+    font-size: 35px !important;
+    margin-right: 5px;
+  }
+  /* line 76, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-md-3 span:nth-child(4) {
+    margin-right: 0px;
+  }
+  /* line 81, ../sass/partials/_responsive.scss */
+  .above-the-fold .venue-container {
+    margin-top: 0px !important;
+  }
+  /* line 85, ../sass/partials/_responsive.scss */
+  .above-the-fold ul.menu .logo-title-menu-hidden {
+    float: left;
+    margin-top: -7px;
+  }
+  /* line 90, ../sass/partials/_responsive.scss */
+  .above-the-fold .drupalcamp-title span {
+    font-size: 90px !important;
+  }
+  /* line 92, ../sass/partials/_responsive.scss */
+  .above-the-fold .drupalcamp-title span.cebu {
+    font-size: 245px !important;
+  }
+
+  /* line 99, ../sass/partials/_responsive.scss */
+  .camp-speakers .speaker-info .img-speaker {
+    margin-left: 30%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 108, ../sass/partials/_responsive.scss */
+  .above-the-fold {
+    height: 1561px;
+  }
+  /* line 110, ../sass/partials/_responsive.scss */
+  .above-the-fold .logo-container,
+  .above-the-fold .drupalcamp-title,
+  .above-the-fold .venue-container {
+    width: 360px;
+    display: block;
+    margin: auto;
+  }
+  /* line 117, ../sass/partials/_responsive.scss */
+  .above-the-fold .drupalcamp-title span {
+    font-size: 80px !important;
+  }
+  /* line 119, ../sass/partials/_responsive.scss */
+  .above-the-fold .drupalcamp-title span.cebu {
+    font-size: 205px !important;
+    line-height: 115px;
+  }
+  /* line 124, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-sm-5,
+  .above-the-fold .col-sm-6 {
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+  /* line 130, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-sm-4 {
+    width: 350px;
+    display: block;
+    margin: auto;
+    margin-top: -50px;
+    height: 380px;
+    background-size: 68% 89%;
+  }
+  /* line 139, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-sm-4 .venue-container span.date {
+    font-size: 46px;
+    line-height: 110px;
+  }
+  /* line 143, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-sm-4 .venue-container span.uni {
+    font-size: 68px;
+    line-height: 0px;
+  }
+  /* line 147, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-sm-4 .venue-container span.uni-name {
+    font-size: 80px;
+    line-height: 75px;
+  }
+  /* line 151, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-sm-4 .venue-container span.cebucity {
+    font-size: 98px;
+    line-height: 80px;
+  }
+  /* line 158, ../sass/partials/_responsive.scss */
+  .above-the-fold .header-intro-text {
+    margin: 0 20px;
+  }
+  /* line 162, ../sass/partials/_responsive.scss */
+  .above-the-fold ul.menu .logo-title-menu-hidden {
+    float: left;
+  }
+
+  /* line 168, ../sass/partials/_responsive.scss */
+  .speaker-info .img-speaker {
+    display: block;
+    margin: auto !important;
+  }
 }
