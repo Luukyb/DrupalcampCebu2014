@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Config OpenGraph Meta feature.
+ */
+
+include_once 'config_opengraph_meta.features.inc';

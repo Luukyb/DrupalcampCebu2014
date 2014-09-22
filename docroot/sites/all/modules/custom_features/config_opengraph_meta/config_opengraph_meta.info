@@ -1,0 +1,16 @@
+name = Config OpenGraph Meta
+description = OpenGraph Metatags Configurations
+core = 7.x
+package = Configurations
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = opengraph_meta_fallback_img
+features[variable][] = opengraph_meta_optional_tags
+features[variable][] = opengraph_meta_site_name
+features[variable][] = opengraph_meta_type_page
+features[variable][] = opengraph_meta_type_session
+features[variable][] = opengraph_meta_type_sponsor
+features[variable][] = opengraph_meta_type_webform
+features[variable][] = opengraph_meta_types_enabled
