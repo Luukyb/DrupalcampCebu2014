@@ -635,6 +635,11 @@ function views_sponsors_views_default_views() {
   );
   $handler->display->display_options['filters']['field_sponsor_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['vocabulary'] = 'sponsor_type';
+  /* Filter criterion: Content: Nid */
+  $handler->display->display_options['filters']['nid']['id'] = 'nid';
+  $handler->display->display_options['filters']['nid']['table'] = 'node';
+  $handler->display->display_options['filters']['nid']['field'] = 'nid';
+  $handler->display->display_options['filters']['nid']['value']['value'] = '9';
   $handler->display->display_options['displays'] = array(
     'gold_block' => 'gold_block',
     'gold_block_2' => 'gold_block_2',
