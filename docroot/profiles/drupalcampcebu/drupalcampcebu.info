@@ -49,6 +49,7 @@ dependencies[] = draggableviews
 
 ; Custom
 dependencies[] = drupalcebu2014_map
+dependencies[] = drupalcebu2014_newsletter
 dependencies[] = drupalcebu2014_permissions
 dependencies[] = drupalcampcebu2014_helper
 

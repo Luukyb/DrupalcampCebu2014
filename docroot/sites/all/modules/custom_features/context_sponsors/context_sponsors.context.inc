@@ -38,6 +38,12 @@ function context_sponsors_context_default_contexts() {
           'region' => 'grey-region',
           'weight' => '-9',
         ),
+        'drupalcebu2014_newsletter-drupalcebu2014_newsletter_signup' => array(
+          'module' => 'drupalcebu2014_newsletter',
+          'delta' => 'drupalcebu2014_newsletter_signup',
+          'region' => 'grey-region',
+          'weight' => '-8',
+        ),
       ),
     ),
   );
