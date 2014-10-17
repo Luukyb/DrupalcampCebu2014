@@ -64,7 +64,7 @@ ul.navbar-nav {
 
 .fb-like {
   text-align: center;
-  margin-top: 35px;
+  margin-top: 55px;
   margin-left: -105px;
   }
 .twitter-share-button {
@@ -229,18 +229,6 @@ h2.english-title {
     }
   }
 }
-
-/*.responsive-menus.responsified {
-  background: url('../images/drupalcamp-textlogo.png') no-repeat;
-  span.toggler {
-    background: none;
-    border-radius: 0px;
-    box-shadow: 2px 2px 2px #1d2734;
-    color: #e3e3e3;
-    text-align: right;
-    margin-right: 25px;
-  }
-}*/
 
 ul.menu {
   margin-top: 6px;
@@ -485,6 +473,12 @@ ul.menu {
         line-height: 50px
       }
     }
+  }
+}
+
+.content {
+  p.book-now-description {
+    font-size: 22px;
   }
 }
 
