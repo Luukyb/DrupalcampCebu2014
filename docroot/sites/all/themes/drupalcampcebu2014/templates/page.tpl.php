@@ -139,7 +139,7 @@ else {
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="nav-container">
         <div class="nav">
-          <div class="camp-menu">
+          <div class="camp-menu" id="main-menu">
             <div class="row">
               <div class="col-md-12">
                 <?php if (!empty($primary_nav)): ?>
@@ -175,46 +175,45 @@ else {
     <div class="row">
       <div class="col-md-12 drupalcamp-speakers">
         <?php if (!empty($title)): ?>
-          
-            <?php 
-            // print $title; 
-
-            if (isset($cebuano_title_field)) {
-              print '<h1 class="page-header cebuano-title">' . render($cebuano_title_field) . '</h1>';
-            }
-            else {
-              print '<h1 class="page-header">' . $title . '</h1>';
-            }
-
-            ?>
-          <?php 
-            if (isset($cebuano_title_field)) {
-              print '<h2 class="english-title">' . $title . '</h2>';
-            }
-          ?>
+        <?php 
+          if (isset($cebuano_title_field)) {
+            print '<h1 class="page-header cebuano-title">' . render($cebuano_title_field) . '</h1>';
+          }
+          else {
+            print '<h1 class="page-header">' . $title . '</h1>';
+          }
+        ?>
+        <?php 
+          if (isset($cebuano_title_field)) {
+            print '<h2 class="english-title">' . $title . '</h2>';
+          }
+        ?>
         <?php endif; ?>
-<!--        <h3>Speakers</h3>-->
         <?php print $messages; ?>
         <?php if (!empty($tabs)): ?>
-          <?php print render($tabs); ?>
+        <?php print render($tabs); ?>
         <?php endif; ?>
         <?php print render($page['content']); ?>
         <?php if (!empty($page['yellow-region'])): ?>
-          <?php print render($page['yellow-region']); ?>
+        <?php print render($page['yellow-region']); ?>
         <?php endif; ?>
-      </div>
-      <div class="col-md-12 fb-and-twitter-button">
-      <div class="fb-like" data-href="<?php print $base_path . current_path(); ?>" 
-        data-layout="button_count" data-action="like" data-show-faces="true" data-share="true">
-      </div>
-        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-        if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
-        fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       </div>
     </div>
   </div>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 fb-and-twitter-button">
+        <div class="fb-like" data-href="<?php print $base_path . current_path(); ?>" 
+        data-layout="button_count" data-action="like" data-show-faces="true" data-share="true">
+        </div>
+        <div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="DrupalCampCebu" data-hashtags="DrupalCampCebu">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <?php if (!empty($page['blue-region'])): ?>
@@ -248,6 +247,42 @@ else {
     <div class="row">
       <div class="col-md-12 drupalcamp-sponsors">
         <?php print render($page['grey-region']); ?>
+
+        <!-- Begin MailChimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            #mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+          <form action="//prometsource.us8.list-manage.com/subscribe/post?u=d7c17f85aa93351e7a79703df&amp;id=1be4349981" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <h2 class="mailchimp-title">Join Drupal Cebu Newsletter</h2>
+            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+              </label>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-FNAME">First Name </label>
+              <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-LNAME">Last Name </label>
+              <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+            </div>
+            <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;"><input type="text" name="b_d7c17f85aa93351e7a79703df_1be4349981" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </form>
+        </div>
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        <!--End mc_embed_signup-->
+
       </div>
     </div>
   </div>
