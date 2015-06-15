@@ -53,9 +53,7 @@ function drupalcebu2014_permissions_secure_permissions($role) {
       'access checkout',
       'access content',
       'access user profiles',
-      'create session content',
       'delete own session content',
-      'edit own session content',
       'use text format filtered_html',
       'view field_day',
       'view field_room',
@@ -181,7 +179,6 @@ function drupalcebu2014_permissions_secure_permissions($role) {
       'create field_day',
       'create field_time',
       'create page content',
-      'create session content',
       'create sponsor content',
       'create webform content',
       'delete own page content',
@@ -199,7 +196,6 @@ function drupalcebu2014_permissions_secure_permissions($role) {
       'edit own field_day',
       'edit own field_time',
       'edit own page content',
-      'edit own session content',
       'edit own sponsor content',
       'edit own webform content',
       'edit own webform submissions',
@@ -212,6 +208,8 @@ function drupalcebu2014_permissions_secure_permissions($role) {
       'view revisions',
     ),
     'speaker' => array(
+    ),
+    'camp attendee' => array(
     ),
   );
   if (isset($permissions[$role])) {
